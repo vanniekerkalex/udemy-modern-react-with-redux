@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+// import Accordion from './components/Accordion';
+// import Search from './components/Search';
+// import Dropdown from "./components/Dropdown";
+import Translate from "./components/Translate";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// const items = [
+// 	{
+// 		title: 'What is react?',
+// 		content: 'React is frontend JS framework'
+// 	},
+// 	{
+// 		title: 'Why use React?',
+// 		content: 'React is a favourite JS library'
+// 	},
+// 	{
+// 		title: 'How to use React?',
+// 		content: 'Blalalala balalal blalala blakalala'
+// 	}
+// ];
 
-export default App;
+// const options = [
+// 	{
+// 		label: "The color red",
+// 		value: "red",
+// 	},
+// 	{
+// 		label: "The color blue",
+// 		value: "blue",
+// 	},
+// 	{
+// 		label: "The color green",
+// 		value: "green",
+// 	},
+// ];
+
+export default () => {
+	// const [selected, setSelected] = useState(options[0]);
+	return (
+		<div>
+			{/* <Accordion items={items} /> */}
+			{/* <Search /> */}
+			{/* <Dropdown
+				options={options}
+				onSelectedChange={setSelected}
+				selected={selected}
+				label="Select a Color"
+			/>
+			<h1 style={{color: selected.value }}>This text is {selected.value}!</h1> */}
+			<Translate />
+		</div>
+	);
+};
